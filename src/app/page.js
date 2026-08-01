@@ -4,6 +4,7 @@ import Additional from "@/components/sections/Additional";
 import Hero from "@/components/sections/Hero";
 import Profile from "@/components/sections/Profile";
 import Services from "@/components/sections/Services"
+import News from "@/components/sections/News";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
@@ -24,6 +25,10 @@ export default function Home() {
         <Profile />
       </section>
 
+      <section id="berita" className="scroll-mt-[170px]">
+        <News />
+      </section>
+      
       <Additional />
       <Footer />
     </div>
