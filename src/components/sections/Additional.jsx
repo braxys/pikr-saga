@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 
 export default function Additional() {
   return (
-    <div className="flex flex-col gap-[30px] mx-[100px] items-center text-center">
+    <div className="flex flex-col gap-[30px] mx-[20px] items-center text-center">
       <div>
         <h1 className="text-[32px] text-secondary font-bold">
           Butuh Teman Cerita?

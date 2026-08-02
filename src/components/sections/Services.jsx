@@ -25,7 +25,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="flex flex-col gap-[35px] mx-[100px]">
+    <div className="flex flex-col gap-[35px] mx-[20px]">
       <div className="text-center">
         <h1 className="text-[32px] text-primary font-bold">
           Layanan PIK-R SAGA

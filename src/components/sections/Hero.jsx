@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-between mx-[100px] gap-[70px]">
+    <div className="flex items-center justify-between mx-[20px] gap-[70px]">
       <div className="flex flex-col w-[667px] gap-[30px]">
         <motion.h1
           initial={{ opacity: 0 }}

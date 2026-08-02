@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="mx-[120px]">
+    <div className="mx-[40px]">
       <div className="flex justify-between items-center bg-primary rounded-[30px] gap-[30px] px-[30px] py-[50px] w-full">
         <div className="flex flex-col flex-1 gap-[5px] w-[475px]">
           <h1 className="text-[32px] font-bold text-accent">Visi & Misi</h1>

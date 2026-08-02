@@ -50,7 +50,7 @@ export default function News() {
   ];
 
   return (
-    <div className="flex flex-col gap-[35px] mx-[100px]">
+    <div className="flex flex-col gap-[35px] mx-[20px]">
 
       {/* Header */}
       <div className="text-center">
