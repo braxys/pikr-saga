@@ -3,8 +3,8 @@ import Button from "../ui/Button";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 bg-white">
-      <div className="flex justify-between px-[50px] py-[10px] items-center shadow-md">
+    <nav className="sticky top-0 z-50 bg-white shadow-md w-full">
+      <div className="flex justify-between px-[50px] py-[10px] items-center max-w-[1920px] mx-auto">
         <a href="#" className="flex items-center">
           <img src="/images/logo/logo-pikr.png" alt="Logo PIK-R" width={50} />
           <h4 className="text-black text-lg">PIK-R SAGA</h4>
