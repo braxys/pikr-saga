@@ -13,7 +13,7 @@ export default function Home() {
     <div className="flex flex-col gap-30">
       <Navbar />
 
-      <main className="flex flex-col gap-30 max-w-[1440px] mx-auto">
+      <main className="flex flex-col gap-30 w-full max-w-[1440px] mx-auto">
         <section id="beranda" className="scroll-mt-[200px]">
           <Hero />
         </section>
