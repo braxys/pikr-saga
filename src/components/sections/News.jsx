@@ -50,30 +50,22 @@ export default function News() {
   ];
 
   return (
-    <div className="flex flex-col gap-[35px] mx-[20px]">
-
+    <div className="flex flex-col gap-[35px] mx-[45px]">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-[32px] text-primary font-bold">
-          Berita Terbaru
-        </h1>
+        <h1 className="text-[32px] text-primary font-bold">Berita Terbaru</h1>
 
-        <p>
-          Informasi terbaru mengenai kegiatan PIK-R SAGA.
-        </p>
+        <p>Informasi terbaru mengenai kegiatan PIK-R SAGA.</p>
       </div>
-
 
       {/* Carousel */}
       <div className="relative flex items-center px-[30px]">
-
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="absolute left-[-25px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary text-white text-[50px] leading-none flex items-center justify-center hover:bg-accent hover:scale-110 transition"
         >
-        <ChevronLeft size={28} strokeWidth={2.5} />
+          <ChevronLeft size={28} strokeWidth={2.5} />
         </button>
-
 
         <Swiper
           modules={[Navigation]}
@@ -97,21 +89,20 @@ export default function News() {
         >
           {news.map((item) => (
             <SwiperSlide key={item.id}>
-              <NewsCard {...item} />
+              <div className="py-3">
+                <NewsCard {...item} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="absolute right-[-25px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary text-white text-[40px] leading-none flex items-center justify-center hover:bg-accent hover:scale-110 transition"
         >
-        <ChevronRight size={28} strokeWidth={2.5} />
+          <ChevronRight size={28} strokeWidth={2.5} />
         </button>
-
       </div>
-
     </div>
   );
 }

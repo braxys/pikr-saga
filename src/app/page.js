@@ -26,7 +26,7 @@ export default function Home() {
           <Profile />
         </section>
 
-        <section id="berita" className="scroll-mt-[170px]">
+        <section id="berita" className="scroll-mt-[95px]">
           <News />
         </section>
 

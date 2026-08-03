@@ -13,16 +13,16 @@ export default function Footer() {
             </div>
             <ul className="flex flex-col text-background w-[188px] gap-[15px]">
               <li className="font-bold">Quick Links</li>
-              <li>
+              <li className="hover:underline">
                 <a href="">Contact</a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a href="">School Affiliation</a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a href="">Privacy Policy</a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a href="">Terms of Service</a>
               </li>
             </ul>

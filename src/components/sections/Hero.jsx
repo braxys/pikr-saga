@@ -63,7 +63,7 @@ export default function Hero() {
         <img
           src="/images/hero/hero-image.png"
           alt="Hero Image"
-          className="w-full h-auto rounded-[30px] object-cover"
+          className="w-full h-auto rounded-[30px] object-cover transition-all duration-300 hover:scale-[1.05]"
         />
       </div>
     </div>
