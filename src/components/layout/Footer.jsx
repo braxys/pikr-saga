@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
       <footer className="bg-primary w-full">
-        <div className="flex p-[50px] gap-[40px] w-full justify-between items-end max-w-[1440px] mx-auto">
-          <div className="flex flex-1 gap-[80px]">
+        <div className="flex flex-col p-[20px] gap-[40px] w-full items-end max-w-[1440px] mx-auto lg:p-[50px] lg:flex-row lg:justify-between">
+          <div className="flex flex-1 gap-[10px] lg:gap-[80px]">
             <div className="flex flex-col gap-[5px]">
               <h3 className="text-[22px] font-bold text-accent w-full">
                 PIK-R SAGA
@@ -11,7 +11,7 @@ export default function Footer() {
                 Empowering Youth Excellence through peer support and education.
               </p>
             </div>
-            <ul className="flex flex-col text-background w-[188px] gap-[15px]">
+            <ul className="flex flex-col text-background w-full gap-[15px] lg:w-[188px]">
               <li className="font-bold">Quick Links</li>
               <li className="hover:underline">
                 <a href="">Contact</a>

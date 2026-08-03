@@ -4,12 +4,12 @@ import Button from "../ui/Button";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md w-full">
-      <div className="flex justify-between px-[50px] py-[10px] items-center max-w-[1920px] mx-auto">
+      <div className="flex justify-between px-[20px] py-[10px] items-center max-w-[1920px] mx-auto lg:px-[50px]">
         <a href="#" className="flex items-center">
           <img src="/images/logo/logo-pikr.png" alt="Logo PIK-R" width={50} />
           <h4 className="text-black text-lg">PIK-R SAGA</h4>
         </a>
-        <div className="flex items-center gap-[30px]" width={661}>
+        <div className="hidden lg:flex items-center justify-end gap-[30px] w-full lg:w-[661px]">
           <ul className="text-black flex gap-[30px]">
             <li>
               <a

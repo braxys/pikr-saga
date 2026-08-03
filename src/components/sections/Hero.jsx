@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-between mx-[20px] gap-[70px]">
-      <div className="flex flex-col w-[667px] gap-[30px]">
+    <div className="flex flex-col gap-[20px] items-center justify-between lg:flex-row lg:gap-[70px]">
+      <div className="flex flex-col w-full gap-[20px] lg:gap-[30px] lg:w-[667px]">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="flex flex-col font-bold text-6xl w-full"
+          className="flex flex-col font-bold text-4xl w-full lg:text-6xl"
         >
           <motion.span
             initial={{ x: -50, opacity: 0 }}
@@ -41,7 +41,7 @@ export default function Hero() {
           membentuk generasi yang sehat, cerdas, berkarakter, dan mampu
           mengambil keputusan yang bertanggung jawab.
         </p>
-        <div className="flex gap-[30px]">
+        <div className="flex gap-[20px] lg:gap-[30px]">
           <Button
             target="_blank"
             rel="noopener noreferrer"
