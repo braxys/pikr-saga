@@ -92,14 +92,14 @@ export default function NewsDetail({ news }) {
         </p>
       </header>
 
-      <div className="relative mb-10 h-[500px] w-full overflow-hidden rounded-[16px]">
+      <div className="relative mb-10 w-full overflow-hidden rounded-[16px]">
         <Image
           src={urlFor(news.thumbnail).url()}
           alt={news.title}
-          fill
+          width={1200}
+          height={800}
           priority
-          sizes="(max-width: 1000px) 100vw, 1000px"
-          className="object-cover"
+          className="h-auto w-full"
         />
       </div>
 

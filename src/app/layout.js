@@ -17,7 +17,8 @@ const inter = Inter({
 
 export const metadata = {
   title: "PIK-R SAGA",
-  description: "Website PIK-R SMANSAGA",
+  description:
+    "Website PIK-R SAGA sebagai wadah pelaporan bullying, kekerasan seksual, konseling remaja, dan edukasi.",
 };
 
 export default function RootLayout({ children }) {
