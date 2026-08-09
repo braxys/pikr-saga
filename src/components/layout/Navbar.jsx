@@ -13,7 +13,7 @@ export default function Navbar() {
           <ul className="text-black flex gap-[30px]">
             <li>
               <a
-                href="#beranda"
+                href="/#beranda"
                 className="relative after:absolute after:left-0 after:-bottom-1
              after:h-[2px] after:w-0 after:bg-accent
              after:transition-all after:duration-300
@@ -24,7 +24,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#layanan"
+                href="/#layanan"
                 className="relative after:absolute after:left-0 after:-bottom-1
              after:h-[2px] after:w-0 after:bg-accent
              after:transition-all after:duration-300
@@ -35,7 +35,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#profil"
+                href="/#profil"
                 className="relative after:absolute after:left-0 after:-bottom-1
              after:h-[2px] after:w-0 after:bg-accent
              after:transition-all after:duration-300
@@ -46,7 +46,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#berita"
+                href="/#berita"
                 className="relative after:absolute after:left-0 after:-bottom-1
              after:h-[2px] after:w-0 after:bg-accent
              after:transition-all after:duration-300

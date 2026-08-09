@@ -12,3 +12,16 @@ export const allNewsQuery = groq`
         publishedAt
     }
 `;
+
+export const newsBySlugQuery = groq`
+  *[_type == "berita" && slug.current == $slug][0]{
+    _id,
+    title,
+    author,
+    slug,
+    thumbnail,
+    excerpt,
+    content,
+    publishedAt
+  }
+`;
