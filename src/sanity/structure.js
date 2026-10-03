@@ -1,5 +1,14 @@
-// https://www.sanity.io/docs/structure-builder-cheat-sheet
 export const structure = (S) =>
   S.list()
-    .title('Content')
-    .items(S.documentTypeListItems())
+    .title("PIK-R SAGA")
+    .items([
+      S.documentTypeListItem("berita")
+        .title("Berita")
+        .child(
+          S.documentTypeList("berita")
+            .title("Semua Berita")
+            .defaultOrdering([
+              { field: "publishedAt", direction: "desc" },
+            ]),
+        ),
+    ]);

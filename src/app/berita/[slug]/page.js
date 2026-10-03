@@ -1,5 +1,6 @@
 import { client } from "@/lib/client";
 import { newsBySlugQuery } from "@/lib/queries";
+import { notFound } from "next/navigation";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import NewsDetail from "@/components/sections/NewsDetail";
@@ -10,12 +11,16 @@ export default async function NewsDetailPage({ params }) {
     slug,
   });
 
+  if (!news) {
+    notFound();
+  }
+
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="max-w-[1440px] mx-auto px-[20px] lg:px-[100px]">
+      <main className="mx-auto w-full max-w-[1440px] flex-1 px-5 sm:px-8 lg:px-16">
         <NewsDetail news={news} />
-      </div>
+      </main>
       <Footer />
     </div>
   );

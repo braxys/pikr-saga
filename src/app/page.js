@@ -35,7 +35,7 @@ export default async function Home() {
 
         <section
           id="berita"
-          className="scroll-mt-[95px] px-[45px] lg:px-[95px]"
+          className="scroll-mt-[95px] px-5 sm:px-8 lg:px-[95px]"
         >
           <News />
         </section>

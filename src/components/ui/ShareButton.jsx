@@ -26,10 +26,11 @@ export default function ShareButton() {
 
   return (
     <button
+      type="button"
       onClick={handleShare}
-      className="flex items-center gap-2 text-sm text-paragraph hover:text-accent transition"
+      className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white px-4 py-2.5 text-sm font-semibold text-primary transition hover:border-accent/30 hover:bg-accent/5 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
-      <Share2 size={16} />
+      <Share2 aria-hidden="true" size={16} />
       Bagikan
     </button>
   );
