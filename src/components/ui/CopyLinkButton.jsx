@@ -22,17 +22,19 @@ export default function CopyLinkButton() {
 
   return (
     <button
+      type="button"
       onClick={handleCopy}
-      className="flex items-center gap-2 text-sm text-paragraph hover:text-accent transition"
+      aria-live="polite"
+      className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white px-4 py-2.5 text-sm font-semibold text-primary transition hover:border-accent/30 hover:bg-accent/5 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       {copied ? (
         <>
-          <Check size={16} />
+          <Check aria-hidden="true" size={16} />
           Link disalin
         </>
       ) : (
         <>
-          <LinkIcon size={16} />
+          <LinkIcon aria-hidden="true" size={16} />
           Salin link
         </>
       )}
